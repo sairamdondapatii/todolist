@@ -1,0 +1,84 @@
+@charset 'utf-8';
+.container{
+    max-width: 400px;
+    margin: auto auto;
+}
+.container>h1{
+    text-align: center;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.input>input{
+    width: 100%;
+    padding: 13px 5px;
+    border-radius: 16px;
+    border-color: black;
+  margin-right: -62px;
+  outline-offset: 4px;
+  outline-color: #2c786c;
+  font-size: 20px;
+}
+.input>input:focus{
+    background-color: #faf5e4 ;
+   
+}
+input::placeholder{
+    color: #2c786c;
+    font-weight: bolder;
+}
+.input>button{
+  font-weight: bold;
+   background-color:   #004445;
+   color: #fff;
+   border: none;
+   border-radius: 16px;
+    padding: 0px 17px;
+    margin: 1.9px 0px;
+    cursor: pointer;
+
+}
+ol{
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100%;
+}
+li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    padding: 6px 0px;
+    color:#004445 ;
+}
+li>span{
+   position: absolute;
+   right: 0;
+   color: black;
+}
+li>span:hover{
+    color: red;
+    cursor: pointer;
+}
+ol li::before{
+    content:"\2610" ;
+    color: #004445;
+    width: 20px;
+    font-size: 20px;
+    position: relative;
+    margin-right: 10px;
+    
+}
+ol li.check::before{
+    content: "\2611";
+    color: green;
+    font-size: 20px;
+    position: relative;
+    margin-right: 10px; 
+}
+ol li.check{
+    text-decoration: line-through;
+}
